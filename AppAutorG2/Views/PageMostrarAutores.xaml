@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAutorG2.Views.PageMostrarAutores"
+             Title="PageMostrarAutores">
+
+
+
+  <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Entry x:Name="buscarEntry" Placeholder="Buscar por nombre" TextChanged="BuscarEntry_TextChanged"/>
+        <CollectionView x:Name="listaAutores" Grid.Row="1">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Nombres}" />
+                        <Label Text="{Binding Pais}" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+
+
+
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAutorG2.Views.PageIntoAutores"
+             Title="Ingreso Autores">
+    <VerticalStackLayout>
+
+        <HorizontalStackLayout Margin="10"  >
+            <Image
+                Source="libros.jpeg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+               
+
+         </HorizontalStackLayout>
+        
+
+        <Entry x:Name="nombres" Placeholder="Nombre del Autor" Keyboard="Text"/>
+        
+
+        <Picker x:Name="pais" Title="Pais del Autor">
+    <Picker.ItemsSource>
+        <x:Array Type="{x:Type x:String}">
+            <x:String>Honduras</x:String>
+            <x:String>El Salvador</x:String>
+            <x:String>Colombia</x:String>
+        </x:Array>
+    </Picker.ItemsSource>
+</Picker>
+
+
+        <Button x:Name="btn_guardar" Text="Guardar" Clicked="btn_guardar_Clicked" Margin="10"/>
+          <Button x:Name="btn_mostrar" Text="Mostrar" Clicked="btn_mostrar_Clicked" Margin="10"/>
+
+    </VerticalStackLayout>
+</ContentPage>
