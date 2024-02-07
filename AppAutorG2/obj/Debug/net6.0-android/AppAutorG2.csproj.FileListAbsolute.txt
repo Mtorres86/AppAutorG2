@@ -962,3 +962,4 @@
 /Users/moisestorres/Projects/AppAutorG2/AppAutorG2/obj/Debug/net6.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/moisestorres/Projects/AppAutorG2/AppAutorG2/obj/Debug/net6.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/moisestorres/Projects/AppAutorG2/AppAutorG2/obj/Debug/net6.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/Users/moisestorres/Projects/AppAutorG2/AppAutorG2/obj/Debug/net6.0-android/resizetizer/r/drawable/autores.png

@@ -5,15 +5,12 @@
              Title="Ingreso Autores">
     <VerticalStackLayout>
 
-        <HorizontalStackLayout Margin="10"  >
+        <HorizontalStackLayout Margin="15"  HorizontalOptions="Center" >
             <Image
-                Source="libros.jpeg"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                
+                Source="autores.png"
                 HeightRequest="200"
-                HorizontalOptions="Center" />
-               
-
+                VerticalOptions="CenterAndExpand" 
+               />
          </HorizontalStackLayout>
         
 

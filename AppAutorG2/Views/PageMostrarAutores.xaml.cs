@@ -25,7 +25,7 @@ public partial class PageMostrarAutores : ContentPage
     private void BuscarEntry_TextChanged(object sender, TextChangedEventArgs e)
     {
         string filtro = e.NewTextValue.ToLower();
-        var autoresFiltrados = listaAutoresCompleta.Where(a => a.Nombres.ToLower().Contains(filtro) || a.Pais.ToLower().Contains(filtro)).ToList();
+        var autoresFiltrados = listaAutoresCompleta.Where(a => a.Id.ToString().Contains(filtro) || a.Nombres.ToLower().Contains(filtro) || a.Pais.ToLower().Contains(filtro)).ToList();
         listaAutores.ItemsSource = autoresFiltrados;
     }
 }
